@@ -1,4 +1,6 @@
-### TerriblyTinyTales- Software Developer Application Challenge
+## TerriblyTinyTales- Software Developer Application Challenge
+**Please refer https://sagarsrivastava.in/terriblytinytales for details & working solution**
+
 
 ##### TECHNOLOGY STACK USED
 Backend - NodeJs/ExpressJs | UI/Frontend - Angular4, HTML, CSS, Bootstrap | Server - DigitalOcean Cloud
@@ -34,3 +36,6 @@ The parsing algorith converts the source data into a sorted array of words each 
 
 `docArr = _.orderBy(_.map(_(docArr).toPairs().value(),(n)=>{return {'word':n[0],'frequency':n[1]}}), ['frequency', 'word'],['desc','asc']);`
 - An array of objects, each consisting of the word and its frequency in separate keys is then created and sorted first by the frequency and then by the word. This is achieved by the map & orderBy methods of the Lodash middleware.
+
+##### TEST CASES
+Refer https://sagarsrivastava.in/terriblytinytales
