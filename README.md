@@ -3,7 +3,9 @@
 
 
 ##### TECHNOLOGY STACK USED
-Backend - NodeJs/ExpressJs | UI/Frontend - Angular4, HTML, CSS, Bootstrap | Server - DigitalOcean Cloud
+Backend - NodeJs/ExpressJs<br />
+UI/Frontend - Angular4, HTML, CSS, Bootstrap<br />
+Server - DigitalOcean Cloud
 
 ##### LIBRARIES/MIDDLEWARES USED
 Lodash, Axios & Cors at the backend
@@ -38,4 +40,55 @@ The parsing algorith converts the source data into a sorted array of words each 
 - An array of objects, each consisting of the word and its frequency in separate keys is then created and sorted first by the frequency and then by the word. This is achieved by the map & orderBy methods of the Lodash middleware.
 
 ##### TEST CASES
-Refer https://sagarsrivastava.in/terriblytinytales
+1. _Case Scenario_: Check UI with a vaild input number N that is greater than zero and lesser than the total number of distinct words found.<br />
+_Case Data_ : N = 10<br />
+_Expected Result_ : Must display 10 words with their corresponding frequencies.<br />
+_Actual Result_: As expected
+
+2. _Case Scenario_: Check UI with a invaild input number 0 or less than 0.<br />
+_Case Data_ : N = 0 or -1<br />
+_Expected Result_ : Must display validation error.<br />
+_Actual Result_: As expected
+
+3.  _Case Scenario_: Check UI with a vaild input number N that is greater than the total number of distinct words found.<br />
+_Case Data_ : N = 500<br />
+_Expected Result_ : Must display all words with their corresponding frequencies with status.<br />
+_Actual Result_: As expected
+
+4.  _Case Scenario_: Check UI with a invaild input.<br />
+_Case Data_ : N = 'ABC'<br />
+_Expected Result_ : Must display validation error.<br />
+_Actual Result_: As expected
+
+5.  _Case Scenario_: Check webservice with a vaild input number N that is greater than zero and lesser than the total number of distinct words found.<br />
+_Case Data_ : {"recordsToFetch":10}<br />
+_Expected Result_ : Must respond with json array of 10 object with words with their corresponding frequencies.<br />
+_Actual Result_: As expected
+
+6.  _Case Scenario_: Check webservice with a invaild input number 0 or less than 0.<br />
+_Case Data_ : {"recordsToFetch":0} or {"recordsToFetch":-1}<br />
+_Expected Result_ : Must respond with error 400 bad request.<br />
+_Actual Result_: As expected
+
+7.  _Case Scenario_: Check webservice with a vaild input number N that is greater than the total number of distinct words found.<br />
+_Case Data_ : {"recordsToFetch":500}<br />
+_Expected Result_ : Must respond with status 200 alongwith all words.<br />
+_Actual Result_: As expected
+
+8.  _Case Scenario_: Check webservice with a invaild input.<br />
+_Case Data_ : {"recordsToFetch":"ABC"}<br />
+_Expected Result_ : Must respond with error 400 bad request.<br />
+_Actual Result_: As expected
+
+9. _Case Scenario_: Checking parsing algorithm for -
+- Words containing letters only
+- Words containing numbers only
+- Words containing special characters like email & hyperlink
+- Contraction words like we're to be considered as one
+- Words terminating in ! or , or ? or . or \n (new-line) or \r (carriage-return) or \t (tab)
+- Words preceeding or trailing by { or } or [ or ] or ( or ) or < or > or ' or " or ;<br />
+_Case Data_ : http://terriblytinytales.com/test.txt<br />
+_Expected Result_ : Must segregate all words independently.<br />
+_Actual Result_: As expected
+
+Refer https://sagarsrivastava.in/terriblytinytales for working solution & more details.
