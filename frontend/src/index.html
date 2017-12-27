@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <title>TTT - Challenge</title>
+        <link rel="shortcut icon" href="/assets/img/favicon.png">
+        <!-- Google Web Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500,300,100' rel='stylesheet' type='text/css'>
+        <!-- CSS Styles -->
+        <link rel="stylesheet" href="/assets/css/styles.css" />
+        <link rel="stylesheet" href="/assets/css/theme.css" />
+        <link rel="stylesheet" href="/assets/css/color/blue-beige.css" id="color" />
+    </head>
+
+    <body class="header-vertical">
+
+        <div id="page-loader" class="bg-white"></div>
+        <header id="header" class="bg-white hidden-sm hidden-xs" style="max-height:500px;">
+            <div class="photo" style="height:300px;background:#222222">
+                <img src="/assets/img/ttt-logo.png" alt="...">
+                <div><h4 style="margin-top:12px;color: #ffffff;font-size: 12px;text-align: center;line-height: 22px;text-transform: uppercase;letter-spacing: 0.8px;">Software Developer Application Challenge</h4></div>
+            </div>
+            <nav id="main-menu">
+                <ul class="nav nav-vertical">
+                    <li><a href="#start" data-target="local-scroll"><span>Start</span></a></li>
+                    <li><a href="#resume" data-target="local-scroll"><span>The Challenge</span></a></li>
+                    <li><a href="#snr" data-target="local-scroll"><span>The Solution</span></a></li>
+                    <li><a href="#portfolio" data-target="local-scroll"><span>Readme</span></a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="content" class="bg-white">
+            <app-root></app-root>
+        </div>
+        <!-- Mobile Navigation -->
+        <a href="#" id="mobile-nav-toggle" class="icon icon-circle icon-sm icon-primary icon-hover visible-xs visible-sm" data-target="mobile-nav">
+            <i class="ti-menu"></i>
+        </a>
+        <nav id="mobile-nav" class="bg-white">
+            <div class="mobile-nav-wrapper" style="padding:0px;">
+                <div class="photo" style="height:300px;background:#222222">
+                    <img src="/assets/img/ttt-logo.png" alt="...">
+                    <div>
+                        <h4 style="margin-top:12px;color: #ffffff;font-size: 12px;text-align: center;line-height: 22px;text-transform: uppercase;letter-spacing: 0.8px;">Software Developer Application Challenge</h4>
+                    </div>
+                </div>
+                <div style="padding:15px">
+                        <header id="header" class="bg-white hidden-sm hidden-xs" style="max-height:500px;">
+                                <div class="photo" style="height:300px;background:#222222">
+                                <img src="/assets/img/ttt-logo.png" alt="...">
+                                <div>
+                                    <h4 style="margin-top:12px;color: #ffffff;font-size: 12px;text-align: center;line-height: 22px;text-transform: uppercase;letter-spacing: 0.8px;">Software Developer Application Challenge</h4>
+                                </div>
+                                </div>
+                                <nav id="main-menu">
+                                <ul class="nav nav-vertical">
+                                    <li><a href="#start" data-target="local-scroll"><span>Start</span></a></li>
+                                    <li><a href="#resume" data-target="local-scroll"><span>The Challenge</span></a></li>
+                                    <li><a href="#snr" data-target="local-scroll"><span>The Solution</span></a></li>
+                                    <li><a href="#portfolio" data-target="local-scroll"><span>Readme</span></a></li>
+                                </ul>
+                                </nav>
+                            </header>
+                    <ul class="nav nav-vertical">
+                            <li><a href="#start" data-target="local-scroll"><span>Start</span></a></li>
+                            <li><a href="#resume" data-target="local-scroll"><span>The Challenge</span></a></li>
+                            <li><a href="#snr" data-target="local-scroll"><span>The Solution</span></a></li>
+                            <li><a href="#portfolio" data-target="local-scroll"><span>Readme</span></a></li>
+                    </ul>
+                </div>
+            <a href="#" class="mobile-nav-close icon icon-hover icon-xs icon-circle icon-primary" data-target="mobile-nav"><i class="fa fa-times"></i></a>
+        </nav>
+        <div id="ajax-modal"></div>
+        <div id="ajax-loader"><i class="fa fa-spinner fa-spin"></i></div>
+        <script src="/assets/js/jquery-1.11.3.min.js"></script>
+        <script>window.paceOptions = {target: '#page-loader',ajax: false};</script>
+        <script src="/assets/js/plugins.js"></script>
+        <script src="/assets/js/core.min.js"></script>
+    </body>
+</html>
